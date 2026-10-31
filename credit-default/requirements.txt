@@ -1,0 +1,11 @@
+# Python 3.12 is the reference environment recorded in the executed notebook.
+# Pin the three versions printed by that run; constrain the other direct dependencies.
+pandas==2.2.3
+scikit-learn==1.6.1
+imbalanced-learn==0.14.2
+numpy>=1.25.2,<3
+scipy>=1.11.4,<2
+matplotlib>=3.8,<4
+joblib>=1.3,<2
+threadpoolctl>=3.2,<4
+ipython>=8,<10
