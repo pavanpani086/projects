@@ -1,0 +1,13 @@
+Encoded_Feature,Importance
+num__person_income,0.300578
+num__loan_int_rate,0.295898
+num__person_age,0.130725
+num__person_emp_length,0.114176
+cat__person_home_ownership_RENT,0.031933
+cat__loan_intent_DEBTCONSOLIDATION,0.019154
+cat__loan_intent_MEDICAL,0.016486
+cat__loan_intent_HOMEIMPROVEMENT,0.015631
+cat__person_home_ownership_MORTGAGE,0.014544
+cat__person_home_ownership_OWN,0.0115
+cat__cb_person_default_on_file_Y,0.010819
+cat__loan_intent_EDUCATION,0.010317

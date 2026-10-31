@@ -1,0 +1,5 @@
+Model,Accuracy,Positive_Precision,Positive_Recall,Positive_F1,ROC_AUC,Average_Precision,Brier
+Logistic Regression,0.8237,0.7037,0.335,0.4539,0.807,0.5926,0.1296
+Random Forest,0.8572,0.7639,0.5021,0.606,0.8585,0.7234,0.106
+KNN,0.8213,0.6522,0.3914,0.4892,0.7646,0.5266,0.1379
+Majority baseline,0.7813,0.0,0.0,0.0,0.5,0.2187,0.1709

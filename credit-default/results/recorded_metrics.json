@@ -1,0 +1,144 @@
+{
+  "source": "Saved outputs in the supplied executed notebook; no models retrained while packaging.",
+  "precision_note": "CSV/JSON table values retain the rounding displayed in the saved notebook.",
+  "default_data": {
+    "raw_rows": 32581,
+    "deduplicated_rows": 32416,
+    "training_rows": 25932,
+    "test_rows": 6484,
+    "positive_class": "default = 1",
+    "classification_threshold": 0.5
+  },
+  "selected_default_model": "Random Forest",
+  "selection_rule": "Highest mean ROC-AUC on five stratified training CV folds",
+  "default_test_metrics": [
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.8237,
+      "Positive_Precision": 0.7037,
+      "Positive_Recall": 0.335,
+      "Positive_F1": 0.4539,
+      "ROC_AUC": 0.807,
+      "Average_Precision": 0.5926,
+      "Brier": 0.1296
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.8572,
+      "Positive_Precision": 0.7639,
+      "Positive_Recall": 0.5021,
+      "Positive_F1": 0.606,
+      "ROC_AUC": 0.8585,
+      "Average_Precision": 0.7234,
+      "Brier": 0.106
+    },
+    {
+      "Model": "KNN",
+      "Accuracy": 0.8213,
+      "Positive_Precision": 0.6522,
+      "Positive_Recall": 0.3914,
+      "Positive_F1": 0.4892,
+      "ROC_AUC": 0.7646,
+      "Average_Precision": 0.5266,
+      "Brier": 0.1379
+    },
+    {
+      "Model": "Majority baseline",
+      "Accuracy": 0.7813,
+      "Positive_Precision": 0.0,
+      "Positive_Recall": 0.0,
+      "Positive_F1": 0.0,
+      "ROC_AUC": 0.5,
+      "Average_Precision": 0.2187,
+      "Brier": 0.1709
+    }
+  ],
+  "default_training_cv_metrics": [
+    {
+      "Model": "Random Forest",
+      "CV_Accuracy_Mean": 0.8517,
+      "CV_Accuracy_Std": 0.0015,
+      "CV_Precision_Mean": 0.7435,
+      "CV_Precision_Std": 0.0063,
+      "CV_Recall_Mean": 0.4918,
+      "CV_Recall_Std": 0.0114,
+      "CV_F1_Mean": 0.5919,
+      "CV_F1_Std": 0.0075,
+      "CV_ROC_AUC_Mean": 0.8511,
+      "CV_ROC_AUC_Std": 0.0047,
+      "CV_Average_Precision_Mean": 0.6988,
+      "CV_Average_Precision_Std": 0.0048
+    },
+    {
+      "Model": "Logistic Regression",
+      "CV_Accuracy_Mean": 0.8126,
+      "CV_Accuracy_Std": 0.004,
+      "CV_Precision_Mean": 0.6489,
+      "CV_Precision_Std": 0.0223,
+      "CV_Recall_Mean": 0.3126,
+      "CV_Recall_Std": 0.0141,
+      "CV_F1_Mean": 0.4217,
+      "CV_F1_Std": 0.0141,
+      "CV_ROC_AUC_Mean": 0.8018,
+      "CV_ROC_AUC_Std": 0.0044,
+      "CV_Average_Precision_Mean": 0.5631,
+      "CV_Average_Precision_Std": 0.011
+    },
+    {
+      "Model": "KNN",
+      "CV_Accuracy_Mean": 0.8154,
+      "CV_Accuracy_Std": 0.001,
+      "CV_Precision_Mean": 0.6263,
+      "CV_Precision_Std": 0.0062,
+      "CV_Recall_Mean": 0.3872,
+      "CV_Recall_Std": 0.0163,
+      "CV_F1_Mean": 0.4783,
+      "CV_F1_Std": 0.0111,
+      "CV_ROC_AUC_Mean": 0.7616,
+      "CV_ROC_AUC_Std": 0.0078,
+      "CV_Average_Precision_Mean": 0.5106,
+      "CV_Average_Precision_Std": 0.0096
+    }
+  ],
+  "credit_score_test_metrics": [
+    {
+      "Model": "Decision Tree",
+      "MAE": 35.325,
+      "RMSE": 48.5581,
+      "R2": 0.406
+    },
+    {
+      "Model": "Mean baseline",
+      "MAE": 48.8608,
+      "RMSE": 63.1307,
+      "R2": -0.0041
+    }
+  ],
+  "approval_demo": {
+    "total_rows": 61,
+    "training_rows": 48,
+    "test_rows": 13,
+    "positive_class": "Approved = 1",
+    "metrics": [
+      {
+        "Model": "MLP + SMOTE (small educational sample)",
+        "Accuracy": 0.8462,
+        "Positive_Precision": 0.9,
+        "Positive_Recall": 0.9,
+        "Positive_F1": 0.9,
+        "ROC_AUC": 0.9667,
+        "Average_Precision": 0.9909,
+        "Brier": 0.0968
+      }
+    ]
+  },
+  "recorded_environment": {
+    "python": "3.12",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "imbalanced-learn": "0.14.2"
+  },
+  "notebook_sha256": "818b99ebbb84f27d452ea59c6d9080917ff7a6e39fc2199bb6a69696bd43c10d",
+  "results_source_notebook_sha256": "adeae5a6c694591ed13d339e79f109ca30fea893a00a3edcd92dd85d8033052f",
+  "presentation_note": "Notebook explanations, comments and three interface labels were edited after execution. Computational code and all saved execution outputs are unchanged."
+}
