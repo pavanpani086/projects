@@ -121,8 +121,17 @@ The tabs cover default risk, the supplied numerical credit score, and the small-
 
 The original 12 scripts are represented in the combined notebook and are not separate runtime dependencies. Running the notebook creates `course_credit_data/` and `course_credit_outputs/`; the latter includes `combined_course_models.joblib`, full-precision metric CSVs and prediction CSVs.
 
-## Source and attribution
 
-Adapted from the instructor-supplied resources for **[Credit Risk Modelling & Credit Scoring with Machine Learning, Christ Raharja](https://www.udemy.com/course/credit-risk-modelling-credit-scoring-with-machine-learning/)**. The twelve parts were combined, with consistent fitted preprocessing, deduplication, shared stratified evaluation, applicant prediction and result exports.
+## Data Sources and References
 
+- **Credit-risk dataset (`credit_risk_dataset.csv`):** Borrower and loan attributes used to predict loan default, with `loan_status` as the target.
+- **Credit-score dataset (`credit_score.csv`):** Financial attributes used to predict the numerical `CREDIT_SCORE` target.
+- **Loan-approval dataset (`loan.csv`):** [Simple Loan Classification Dataset](https://www.kaggle.com/datasets/sujithmandala/simple-loan-classification-dataset), used for the small-sample MLP approval demonstration.
+- **Libraries:** NumPy, pandas, Matplotlib, scikit-learn, imbalanced-learn and Gradio.
+
+The datasets are bundled inside the notebook and restored before analysis and training.
+
+### Acknowledgement
+
+Modelling examples were adapted from educational materials by Christ Raharja. The project combines these workflows with training-only preprocessing, consistent validation, saved model pipelines and documented evaluation results.
 The default-risk and numerical-score CSVs were supplied in the course materials. The small approval dataset is the [Simple Loan Classification Dataset](https://www.kaggle.com/datasets/sujithmandala/simple-loan-classification-dataset) referenced by the supplied MLP script. The notebook preserves the dataset-source notes and bundled-data checksums.
